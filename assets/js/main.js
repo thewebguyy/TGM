@@ -152,12 +152,7 @@
   /**
    * Preloader
    */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+ 
 
   /**
    * Initiate glightbox 
@@ -205,10 +200,10 @@
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
-    speed: 400,
+    speed: 200,
     loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
       disableOnInteraction: false
     },
     pagination: {
